@@ -1,10 +1,11 @@
 require 'MyEnumerable'
 
-class  MyList
+class MyList
   include MyEnumerable
-   def initialize(*list)
+  def initialize(*list)
     @list = list
   end
+
   def each(&block)
     @list.each(&block)
   end
